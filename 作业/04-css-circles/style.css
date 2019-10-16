@@ -1,0 +1,93 @@
+/*Layout*/
+
+body {
+  padding-left: .5em;
+}
+
+footer {
+  position: relative;
+  top: -5px;
+}
+
+h1 {
+  display: inline-block;
+  margin-bottom: .125em;
+  margin-top: .25em;
+}
+
+h2 {
+  display: inline-block;
+  margin-bottom: .5em;
+  margin-top: .125em;
+}
+
+
+/*Typography*/
+
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: .9em;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 3em;
+
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/*Specific styles*/
+
+#circleOne {
+  position: relative;
+  top: 25px;
+  width: 200px;
+  height: 200px;
+  background-color: #f00;
+  border: 3px solid #a00;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#circleTwo {
+  position: relative;
+  top: -25px;
+  width: 200px;
+  height: 200px;
+  background-color: #ff0;
+  border: 3px solid #aa0;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+#circleThree {
+  position: relative;
+  top: -75px;
+  width: 200px;
+  height: 200px;
+  background-color: #00f;
+  border: 3px solid #00a;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+#license {
+  color: #000;
+  font-family: monospace;
+  font-size: .9em;
+  position: relative;
+}
+
+#license a {
+  color: #000;
+}

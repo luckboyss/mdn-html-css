@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo</title>
+  <style>
+    p {
+      width: 100px;
+      height: 100px;
+      /* The background is used to specify the border background */
+      background: linear-gradient(90deg, #efefef 0%, #3498db 100%);
+      /* W3C */
+      /* Background origin is the padding box by default.
+  Override to make the background cover the border as well. */
+      -moz-background-origin: border;
+      background-origin: border-box;
+      /* A transparent border determines the width */
+      border: 6px solid transparent;
+      border-radius: 50%;
+      box-shadow: inset -999px 0 0 #fff;
+      animation: loading 1s linear infinite;
+    }
+
+    @keyframes loading {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    p::after {
+      content: "♥";
+      display: block;
+      height: 100%;
+      text-align: center;
+      line-height: 100px;
+      font-size: 4em;
+      color: rgb(226, 57, 66);
+      margin: 0 auto;
+      animation: loading 1s linear infinite reverse;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loader">
+    <p></p>
+  </div>
+</body>
+
+</html>
